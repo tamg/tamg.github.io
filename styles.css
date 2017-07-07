@@ -2,26 +2,71 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  background: rgba(0,0,0,.3);
+  background: #e3dede;
+  box-sizing: border-box;
 }
 
 #main {
-  max-width: 600px;
-  width: 70%;
+  width: 90%;
+  max-width: 700px;
   margin: 100px auto;
   padding: 30px;
   color: black;
   border-radius: 5px;
+  box-shadow: 2px 2px 400px #d0cccc;
+  /*transition: all ease-in-out .45s;*/
 }
 
-#main:hover {
-  box-shadow: 2px 2px 400px rgb(218, 218, 218);
+@media screen and (max-width: 400px) {
+  #main {
+    margin: 0 auto;
+    width: 75%;
+    min-width: 280px;
+    padding: 5px;
+    box-shadow: none;
+  }
 }
 
-#main p {
+#main {
   font-size: 22px;
 }
 
-#main a {
+a {
+  font-size: 22px;
   text-decoration: none;
+}
+
+#main div {
+  text-align: center;
+}
+
+.links {
+  padding: 20px;
+}
+
+.links a {
+  padding-right: 20px;
+}
+
+.works > h2 {
+  font-size: 1.2em;
+  display: inline-block;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.works p {
+  font-size: .95em;
+  margin-top: -10px;
+}
+
+.works, ul{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.works ul li {
+  margin: 0 auto;
+  list-style: none;
+  border-bottom: 1px solid #b1b1b1;
 }
